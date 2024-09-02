@@ -1,0 +1,8 @@
+{
+    "PageURL": "localhost",
+    "DB_host": "localhost",
+    "DB_username": "Hicham",
+    "DB_password": "Hallosaid1",
+    "DB_database": "TEMPLATE_DB",
+    "SecretKey": "!7d59ef002e0955dd73A!7d59ef002e0955dd73A"
+}
