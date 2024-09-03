@@ -208,7 +208,7 @@ Distributed under the MIT License. See LICENSE.txt for more information.
 <!-- CONTACT -->
 ## Contact
 
-Hicham El-Kord - hichamelkord@gmail.com
+Hicham El-Kord - elkordhicham@gmail.com
 
 Project Link: [https://github.com/BrokenMesh/MyAPITemplate](https://github.com/BrokenMesh/MyAPITemplate)
 
