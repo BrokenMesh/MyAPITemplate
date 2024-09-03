@@ -1,4 +1,5 @@
-﻿using MyAPITemplate.Model;
+﻿using MyAPITemplate.Logic;
+using MyAPITemplate.Model;
 using System;
 using System.Security.Cryptography;
 
@@ -60,7 +61,7 @@ namespace MyAPITemplate.Database
             using (var context = new DBEntityContext()) {
                 User? user = context.Set<User>().First(u => u.User_id == _id);
                 if (user != null) {
-                    return user.Password == _password;
+                    return Auth.VerifyPassword(_password, user.Password);
                 }
             }
 

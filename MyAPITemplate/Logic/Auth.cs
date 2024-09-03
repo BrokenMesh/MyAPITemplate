@@ -3,6 +3,7 @@ using MyAPITemplate.Controller;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using BCrypt.Net;
 
 namespace MyAPITemplate.Logic
 {
@@ -31,6 +32,7 @@ namespace MyAPITemplate.Logic
                 return null;
             }
         }
+
         public static bool VerifyToken(string _srtToken, out Guid _user_id) {
             _user_id = Guid.Empty;
 
@@ -80,6 +82,14 @@ namespace MyAPITemplate.Logic
 
             _user_id = _userIdClaim;
             return true;
+        }
+
+        public static string HashPassword(string _password) {
+            return BCrypt.Net.BCrypt.HashPassword(_password);
+        }
+
+        public static bool VerifyPassword(string _inputPassword, string _password) {
+            return BCrypt.Net.BCrypt.Verify(_inputPassword, _password);
         }
     }
 }

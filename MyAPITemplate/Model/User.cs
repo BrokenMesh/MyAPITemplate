@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MyAPITemplate.Logic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyAPITemplate.Model
@@ -11,10 +12,15 @@ namespace MyAPITemplate.Model
         
         [Required, MaxLength(255)]
         public string Username { get; set; }
-        
+
         [Required, MaxLength(255)]
-        public string Password { get; set; }
-        
+        public string Password {
+            get => password;
+            set => password = Auth.HashPassword(value);
+        }
+
+        private string password;
+
         [MaxLength(255)]
         public string Email { get; set; }
     }
