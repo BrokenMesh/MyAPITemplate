@@ -4,7 +4,7 @@
 <h3 align="center">My API Template</h3>
 
   <p align="center">
-    A API Template that sets up resouces, database, Models and endpoints the way I like it. 
+    A API Template that sets up resouces, database, models and endpoints the way I like it. 
     <br />
     <a href="https://github.com/BrokenMesh/MyAPITemplate/issues">Report Bug</a>
     ·
