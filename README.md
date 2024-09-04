@@ -189,7 +189,7 @@ Now you can test your new endpoints. For testing, you can use the example data g
 
           DBManager.TruncateUsers();
           userResource.Generate(10);
-          DBManager.CreateUser("BrokenMesh", "Hallosaid1", "elkordhicham@gmail.com");
+          DBManager.CreateUser("BrokenMesh", "1234", "elkordhicham@gmail.com");
 
           DBManager.TruncateTodos();
           todoResource.Generate(10);
