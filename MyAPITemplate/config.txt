@@ -1,0 +1,8 @@
+{
+    "PageURL": "localhost",
+    "DB_host": "localhost",
+    "DB_username": "DATABASE_USERNAME",
+    "DB_password": "DATABASE_PASSWORD",
+    "DB_database": "TEMPLATE_DB",
+    "SecretKey": "KEY"
+}
